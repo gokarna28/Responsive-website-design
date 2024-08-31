@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+    <div class="p-0 m-0">
+
+        <!-- navbar section -->
+        <nav class="bg-white shadow-lg w-screen">
+            <div class="max-w-7xl mx-auto px-4">
+                <div class="flex justify-between items-center py-4">
+                    <div class="text-2xl font-bold text-gray-800">
+                        Logo
+                    </div>
+
+                    <div class="hidden md:flex">
+                        <ul class="flex space-x-6 text-xl">
+                            <li><a href="#" class="text-gray-800 hover:text-blue-500">BLOG</a></li>
+                            <li><a href="#" class="text-gray-800 hover:text-blue-500">WORKSHOP</a></li>
+                            <li><a href="#" class="text-gray-800 hover:text-blue-500">BLOG</a></li>
+                            <li><a href="#" class="text-gray-800 hover:text-blue-500">CONTACT</a></li>
+                            <li><a href="#" class="text-gray-800 hover:text-blue-500">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Mobile Menu Button -->
+                    <div class="md:hidden">
+                        <button id="mobile-menu-button" class="text-gray-800 focus:outline-none">
+                            <i class="fa-solid fa-bars w-6 h-6 text-3xl"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden">
+                <ul>
+                    <li><a href="#" class="block text-gray-800 hover:bg-gray-200 px-4 py-2">SHOP</a></li>
+                    <li><a href="#" class="block text-gray-800 hover:bg-gray-200 px-4 py-2">WORKSHOP</a></li>
+                    <li><a href="#" class="block text-gray-800 hover:bg-gray-200 px-4 py-2">BLOG</a></li>
+                    <li><a href="#" class="block text-gray-800 hover:bg-gray-200 px-4 py-2">CONTACT</a></li>
+                    <li><a href="#" class="block text-gray-800 hover:bg-gray-200 px-4 py-2">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- hero section -->
+        <div class="relative w-screen  md:h-screen h-[500px] bg-slate-100 flex justify-center items-center">
+            <img src="images/hero.jpg" alt="hero image" class="absolute inset-0 w-full h-full object-cover z-0">
+            <div class="absolute inset-0 bg-black opacity-50"></div> <!-- Dark overlay -->
+
+            <div class="relative z-10 flex flex-col items-center justify-center space-y-6 md:w-2/6 w-full p-6">
+                <h1 class="md:text-4xl text-3xl md:font-bold font-medium text-white">Ceramics studio</h1>
+                <p class="md:text-xl text-sm text-center text-slate-200">Lorem Ipsum has been the industry's standard
+                    dummy text ever
+                    since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+                    specimen book</p>
+                <button class="px-4 py-3 bg-red-700 md:text-xl text-sm text-white hover:bg-red-800">Show More</button>
+            </div>
+        </div>
+
+        <!-- bestsellery section -->
+        <div class="flex flex-col items-center justify-center md:px-24 md:py-24 py-10 space-y-6 w-screen md:h-screen">
+            <h2 class="md:text-4xl text-3xl font-medium md:font-bold text-gray-700">Bestsellery</h2>
+
+            <div
+                class="flex md:flex-row flex-col items-stretch w-full h-full md:space-x-6 justify-center md:space-y-0 space-y-4 md:px-0 px-4">
+
+                <div class="flex flex-col items-stretch md:w-1/4 h-full border-b hover:shadow-md">
+                    <div class="flex w-full h-full">
+                        <img src="images/1.jpg" alt="card image" class="w-full h-full object-cover">
+                    </div>
+                    <div class="flex flex-col justify-start w-full text-xl p-2">
+                        <p class="md:text-xl font-medium text-sm">Moon plate</p>
+                        <p class="md:text-xl text-sm">75$</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col items-stretch md:w-1/4 h-full border-b hover:shadow-md">
+                    <div class="flex w-full h-full">
+                        <img src="images/2.jpg" alt="card image" class="w-full h-full object-cover">
+                    </div>
+                    <div class="flex flex-col justify-start w-full text-xl p-2">
+                        <p class="md:text-xl font-medium text-sm">Moon plate</p>
+                        <p class="md:text-xl text-sm">75$</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col items-stretch md:w-1/4 h-full border-b hover:shadow-md">
+                    <div class="flex w-full h-full">
+                        <img src="images/1.jpg" alt="card image" class="w-full h-full object-cover">
+                    </div>
+                    <div class="flex flex-col justify-start w-full text-xl p-2">
+                        <p class="md:text-xl font-medium text-sm">Moon plate</p>
+                        <p class="md:text-xl text-sm">75$</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- new collction -->
+        <div class="flex items-center bg-slate-200 md:py-24 py-10  justify-center md:h-screen w-screen md:px-24">
+            <div class="flex md:flex-row flex-col md:space-x-10 space-y-6 items-center justify-center w-full h-full ">
+
+                <div class="flex flex-col space-y-6 items-start md:w-1/2 w-full md:px-0 px-8">
+                    <h1 class="flex md:text-4xl text-3xl  text-gry-700 md:font-bold font-medium">New collection</h1>
+                    <p class="md:text-xl text-sm text-gray-700 flex flex-wrap">
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                        unknown printer
+                        took a galley of type and scrambled it to make a type specimen book
+                    </p>
+                    <button
+                        class="flex px-4 py-3 bg-red-700 hover:bg-red-800 text-white w-28 justify-center md:text-xl text-sm items-center">More</button>
+                </div>
+                <div class="flex flex-row items-stretch md:space-x-6 md:w-1/2 w-full h-full">
+                    <!-- Left Column: Two Stacked Images -->
+                    <div class="flex flex-col items-center justify-between md:space-y-6 space-y-2 h-auto md:px-0 px-2">
+                        <div class="w-48 md:w-80">
+                            <img src="images/1.jpg" class="w-full h-auto object-cover">
+                        </div>
+                        <div class="w-48 md:w-80">
+                            <img src="images/2.jpg" class="w-full h-auto object-cover">
+                        </div>
+                    </div>
+                    <!-- Right Column: Single Image -->
+                    <div class="flex items-stretch md:w-80 w-48 h-auto">
+                        <img src="images/hero.jpg" class="w-full object-cover">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Workshop section -->
+        <div class="flex items-center justify-center w-screen md:h-screen md:p-24">
+            <div class="flex md:flex-row flex-col items-stretch justify-center w-full h-full">
+                <div class="md:w-1/2 w-full h-full">
+                    <img src="images/workshop.jpg" alt="image" class="w-full h-full object-cover">
+                </div>
+                <div class="flex flex-col items-start justify-center md:ml-20 space-y-6  md:w-1/2 w-full h-full p-8">
+                    <h1 class="md:text-4xl text-3xl font-medium md:font-bold">Workshops</h1>
+                    <p class="md:text-xl text-sm">
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                        unknown printer took a galley of type and scrambled it to make a type specimen book
+                    </p>
+                    <button
+                        class="px-4 py-3 md:text-xl text-sm bg-red-700 hover:bg-red-800 text-white">Subscribe</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- our employees -->
+        <div class="flex flex-col w-screen md:h-screen items-center md:px-24 md:py-24 py-10 bg-gray-200">
+            <h1 class="md:text-4xl text-3xl font-medium md:font-bold">Our employees</h1>
+
+            <div class="flex md:flex-row flex-col items-center justify-center w-full h-full md:space-x-10 space-y-10">
+
+                <div class="flex flex-col w-full h-full space-y-6 items-center justify-center ">
+                    <img src="images/p1.jpg" alt="card image" class="w-[100px] h-[100px] rounded-full">
+                    <p class="text-xl font-semibold">Emily Murphy</p>
+                    <p class="text-center justify-center md:text-xl text-sm px-8">Lorem Ipsum has been the
+                        industry's standard dummy text ever since
+                        the 1500s, when an unknown printer. Lorem Ipsum has been the industry's standard dummy text ever
+                        since
+                        the 1500s, when an unknown printer</p>
+                </div>
+                <div class="flex flex-col w-full h-full space-y-6 items-center justify-center">
+                    <img src="images/p2.jpg" alt="card image" class="w-[100px] h-[100px] rounded-full">
+                    <p class="text-xl font-semibold">Mary Smith</p>
+                    <p class="text-center justify-center md:text-xl text-sm px-8">Lorem Ipsum has been the
+                        industry's standard dummy text ever since
+                        the 1500s, when an unknown printer. Lorem Ipsum has been the industry's standard dummy text ever
+                        since
+                        the 1500s, when an unknown printer</p>
+                </div>
+                <div class="flex flex-col w-full h-full space-y-6 items-center justify-center">
+                    <img src="images/p3.jpg" alt="card image" class="w-[100px] h-[100px] rounded-full">
+                    <p class="text-xl font-semibold">James Jones</p>
+                    <p class="text-center justify-center md:text-xl text-sm px-8">Lorem Ipsum has been the
+                        industry's standard dummy text ever since
+                        the 1500s, when an unknown printer. Lorem Ipsum has been the industry's standard dummy text ever
+                        since
+                        the 1500s, when an unknown printer</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- images section -->
+        <div class="flex items-center justify-center md:h-screen h-[500px] w-screen md:py-24 py-10 md:px-24">
+            <div class="flex flex-row items-stretch justify-center md:space-x-6 space-x-2 w-full h-full">
+                <!-- First Image Column -->
+                <div class="flex items-stretch w-1/2 h-full">
+                    <img src="images/1.jpg" class="w-full h-full object-cover">
+                </div>
+
+                <!-- Second Column with Nested Images -->
+                <div class="flex flex-col items-center justify-between md:space-y-6 space-y-2 w-1/2 h-full">
+                    <div class="w-full h-1/2">
+                        <img src="images/2.jpg" class="w-full h-full object-cover">
+                    </div>
+                    <div class="flex items-center justify-center md:space-x-6 space-x-2 w-full h-1/2">
+                        <div class="w-1/2 h-full">
+                            <img src="images/2.jpg" class="w-full h-full object-cover">
+                        </div>
+                        <div class="w-1/2 h-full">
+                            <img src="images/1.jpg" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- our story section -->
+        <div class="relative w-screen md:h-screen h-[500px] bg-slate-100 flex justify-center items-center">
+            <img src="images/story.jpg" alt="hero image" class="absolute inset-0 w-full h-full object-cover z-0">
+            <!-- Dark overlay -->
+            <div class="absolute inset-0 bg-black opacity-70"></div>
+            <div class="w-full md:px-24">
+                <div class="relative z-10 flex flex-col items-start justify-start space-y-6 md:w-2/6 w-full p-6">
+                    <h1 class="text-4xl font-bold text-white">Our story</h1>
+                    <p class="md:text-xl text-sm text-start text-slate-200">Lorem Ipsum has been the industry's standard
+                        dummy text ever
+                        since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+                        specimen book</p>
+                </div>
+            </div>
+        </div>
+
+        <!--footer section-->
+        <div class="bg-zinc-900 md:p-10 md:py-0 py-10 w-screen">
+            <div
+                class="text-white flex md:flex-row flex-col items-center md:justify-evenly justify-center space-y-6 md:space-y-0 md:space-x-6 p-6">
+                <!-- Address Section -->
+                <div class="flex flex-col items-center space-y-4 md:text-xl text-sm">
+                    <p>o2-233 Warszawa</p>
+                    <p>AI.Jerozolimskie 12</p>
+                </div>
+
+                <!-- Contact Section -->
+                <div class="flex flex-col items-center space-y-4 md:text-xl text-sm">
+                    <p>email@contact.com</p>
+                    <p>+48 500 500 500</p>
+                </div>
+
+                <!-- Policies Section -->
+                <div class="flex flex-col items-center space-y-4 md:text-xl text-sm">
+                    <p>Store Regulations</p>
+                    <p>Privacy Policy</p>
+                </div>
+
+                <!-- Delivery Section -->
+                <div class="flex flex-col items-center space-y-4 md:text-xl text-sm">
+                    <p>Delivery</p>
+                    <p>Returns & exchanges</p>
+                </div>
+
+                <!-- Social Media Links -->
+                <div class="flex items-center space-x-4 text-xl text-green-300">
+                    <a class="hover:text-green-500" href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a class="hover:text-green-500" href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a class="hover:text-green-500" href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+
+</html>
